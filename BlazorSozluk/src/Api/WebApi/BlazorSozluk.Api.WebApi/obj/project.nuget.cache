@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "QF92fQg6KAWRpVDDZ6Hp/Z2vw9hqw9gNzB9OFOSYKQaM3NrApiaVqjhYT5Y4KrOIwKLT+XJ2oBcjwYYtpLaIEQ==",
+  "success": true,
+  "projectFilePath": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Api\\WebApi\\BlazorSozluk.Api.WebApi\\BlazorSozluk.Api.WebApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
