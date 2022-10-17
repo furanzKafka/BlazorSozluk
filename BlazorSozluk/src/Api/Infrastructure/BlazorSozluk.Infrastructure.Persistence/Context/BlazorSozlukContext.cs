@@ -38,12 +38,14 @@ namespace BlazorSozluk.Infrastructure.Persistence.Context
 
         public override int SaveChanges()
         {
+            OnBeforeSave();
             return base.SaveChanges();
         }
 
 
         public override int SaveChanges(bool acceptAllChangesOnSuccess)
         {
+            OnBeforeSave();
             return base.SaveChanges(acceptAllChangesOnSuccess);
         }
 
@@ -76,7 +78,8 @@ namespace BlazorSozluk.Infrastructure.Persistence.Context
         {
             foreach (var entity in entities)
             {
-                entity.CreateDate = DateTime.Now;
+                if (entity.CreateDate == DateTime.MinValue)
+                    entity.CreateDate = DateTime.Now;
             }
         }
 
