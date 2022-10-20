@@ -13,6 +13,10 @@ namespace BlazorSozluk.Infrastructure.Persistence.Context
     {
         public const string DEFAULT_SCHEMA = "dbo";
 
+        public BlazorSozlukContext()
+        {
+
+        }
         public BlazorSozlukContext(DbContextOptions options) : base(options)
         {
         }
@@ -27,6 +31,23 @@ namespace BlazorSozluk.Infrastructure.Persistence.Context
         public DbSet<EntryCommentVote> EntryCommentVotes { get; set; }
         public DbSet<EntryCommentFavorite> EntryCommentFavorites { get; set; }
         public DbSet<EmailConfirmation> EmailConfirmations { get; set; }
+
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+
+            if (!optionsBuilder.IsConfigured)
+            {
+                var connStr = "Data Source=localhost; Initial Catalog=blazorsozluk;Persist Security Info=True; Trusted_Connection=True";
+                optionsBuilder.UseSqlServer(connStr, opt =>
+                {
+                    opt.EnableRetryOnFailure();
+                });
+            }
+
+
+            base.OnConfiguring(optionsBuilder);
+        }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -67,7 +88,7 @@ namespace BlazorSozluk.Infrastructure.Persistence.Context
 
         private void OnBeforeSave()
         {
-            var addedEntities = ChangeTracker.Entries()
+            var addedEntities = ChangeTracker.Entries()             //ChangeTracker is catch all Entries
                 .Where(i => i.State == EntityState.Added)
                 .Select(i => (BaseEntity)i.Entity);
 
