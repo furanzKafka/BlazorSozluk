@@ -13,7 +13,7 @@ namespace BlazorSozluk.Infrastructure.Persistence.EntityConfigurations.EntryComm
     {
         public override void Configure(EntityTypeBuilder<Api.Domain.Models.EntryComment> builder)
         {
-            base.Configure(builder);
+            base.Configure(builder);    //this configure BaseEntity's configure, we propered Id and CreateDate
 
             builder.ToTable("entrycomment",BlazorSozlukContext.DEFAULT_SCHEMA);
 
