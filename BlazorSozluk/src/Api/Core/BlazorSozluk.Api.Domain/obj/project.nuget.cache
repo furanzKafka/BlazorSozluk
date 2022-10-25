@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "5/GsdG1ZAsNErqj0reVyaAKCw75lK2Jmub0dBgytIUn1kM/3+dyON+teRN4U8QwM7fa2XKrA2fcWOIeNNRi9Og==",
+  "dgSpecHash": "lN+509ylvv0QnaKQImVFR4u8Vs0bVJpenLXrpdVgu/PzFV7jpF+BgKgXSRFqqxaOx4p52K6gOlraZGNH1zQgng==",
   "success": true,
   "projectFilePath": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Api\\Core\\BlazorSozluk.Api.Domain\\BlazorSozluk.Api.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\LENOVO\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
