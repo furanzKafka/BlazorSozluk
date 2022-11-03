@@ -17,3 +17,5 @@ D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\Infrastructure\Bl
 D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\Infrastructure\BlazorSozluk.Infrastructure.Persistence\obj\Debug\net6.0\BlazorSozluk.Infrastructure.Persistence.pdb
 D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\Infrastructure\BlazorSozluk.Infrastructure.Persistence\obj\Debug\net6.0\BlazorSozluk.Infrastructure.Persistence.genruntimeconfig.cache
 D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\Infrastructure\BlazorSozluk.Infrastructure.Persistence\obj\Debug\net6.0\ref\BlazorSozluk.Infrastructure.Persistence.dll
+D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\Infrastructure\BlazorSozluk.Infrastructure.Persistence\bin\Debug\net6.0\BlazorSozluk.Api.Application.dll
+D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\Infrastructure\BlazorSozluk.Infrastructure.Persistence\bin\Debug\net6.0\BlazorSozluk.Api.Application.pdb

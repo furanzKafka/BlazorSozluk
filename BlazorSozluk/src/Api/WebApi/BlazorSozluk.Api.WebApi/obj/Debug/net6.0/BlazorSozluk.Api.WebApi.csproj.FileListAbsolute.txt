@@ -65,3 +65,13 @@ D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\WebApi\BlazorSozl
 D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\WebApi\BlazorSozluk.Api.WebApi\obj\Debug\net6.0\BlazorSozluk.Api.WebApi.pdb
 D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\WebApi\BlazorSozluk.Api.WebApi\obj\Debug\net6.0\BlazorSozluk.Api.WebApi.genruntimeconfig.cache
 D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\WebApi\BlazorSozluk.Api.WebApi\obj\Debug\net6.0\ref\BlazorSozluk.Api.WebApi.dll
+D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\WebApi\BlazorSozluk.Api.WebApi\bin\Debug\net6.0\AutoMapper.dll
+D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\WebApi\BlazorSozluk.Api.WebApi\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\WebApi\BlazorSozluk.Api.WebApi\bin\Debug\net6.0\FluentValidation.dll
+D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\WebApi\BlazorSozluk.Api.WebApi\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\WebApi\BlazorSozluk.Api.WebApi\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\WebApi\BlazorSozluk.Api.WebApi\bin\Debug\net6.0\MediatR.dll
+D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\WebApi\BlazorSozluk.Api.WebApi\bin\Debug\net6.0\MediatR.Contracts.dll
+D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\WebApi\BlazorSozluk.Api.WebApi\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\WebApi\BlazorSozluk.Api.WebApi\bin\Debug\net6.0\BlazorSozluk.Api.Application.dll
+D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\WebApi\BlazorSozluk.Api.WebApi\bin\Debug\net6.0\BlazorSozluk.Api.Application.pdb
