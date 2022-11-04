@@ -15,7 +15,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlazorSozluk.Api.Application.Features.Commands.User
+namespace BlazorSozluk.Api.Application.Features.Commands.User.Login
 {
     public class LoginUserCommandHandler : IRequestHandler<LoginUserCommand, LoginUserViewModel>
     {
@@ -54,7 +54,7 @@ namespace BlazorSozluk.Api.Application.Features.Commands.User
                 new Claim(ClaimTypes.Surname,dbUser.LastName),
 
             };
-            result.Token=GenerateToken(claims);
+            result.Token = GenerateToken(claims);
             return result;
 
         }

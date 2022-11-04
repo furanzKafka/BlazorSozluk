@@ -75,3 +75,4 @@ D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\WebApi\BlazorSozl
 D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\WebApi\BlazorSozluk.Api.WebApi\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
 D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\WebApi\BlazorSozluk.Api.WebApi\bin\Debug\net6.0\BlazorSozluk.Api.Application.dll
 D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\WebApi\BlazorSozluk.Api.WebApi\bin\Debug\net6.0\BlazorSozluk.Api.Application.pdb
+D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\WebApi\BlazorSozluk.Api.WebApi\bin\Debug\net6.0\RabbitMQ.Client.dll
