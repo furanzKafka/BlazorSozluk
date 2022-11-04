@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "lN+509ylvv0QnaKQImVFR4u8Vs0bVJpenLXrpdVgu/PzFV7jpF+BgKgXSRFqqxaOx4p52K6gOlraZGNH1zQgng==",
+  "dgSpecHash": "HEZR4/t7gtdol7r4zCaPwxOiXVJReN6t01UwGt9nCgb99EYmXcwx3MttoHU4ktRFnl3BPuAElGNgnD45wYjfEA==",
   "success": true,
   "projectFilePath": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Api\\Core\\BlazorSozluk.Api.Domain\\BlazorSozluk.Api.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
-    "C:\\Users\\LENOVO\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
+    "C:\\Users\\LENOVO\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\rabbitmq.client\\6.4.0\\rabbitmq.client.6.4.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
   ],
   "logs": []
 }
