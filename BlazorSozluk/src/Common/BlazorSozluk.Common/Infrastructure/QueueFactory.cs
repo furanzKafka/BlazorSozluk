@@ -34,12 +34,12 @@ namespace BlazorSozluk.Common.Infrastructure
             var factory = new ConnectionFactory() { HostName = SozlukConstants.RabbitMQHost };
             try
             {
-                var connection = factory.CreateConnection();
+            var connection = factory.CreateConnection();
 
-                var channel = connection.CreateModel();
+            var channel = connection.CreateModel();
 
-                return new EventingBasicConsumer(channel);
-            }
+            return new EventingBasicConsumer(channel);
+        }
             catch (Exception ex)
             {
 
