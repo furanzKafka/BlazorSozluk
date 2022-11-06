@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BlazorSozluk.Api.Application.Mapping
 {
-    public class MappingProfile:Profile
+    public class MappingProfile : Profile
     {
         public MappingProfile()
         {
@@ -18,6 +18,9 @@ namespace BlazorSozluk.Api.Application.Mapping
 
             CreateMap<CreateUserCommand, User>();
             CreateMap<UpdateUserCommand, User>();
+
+            CreateMap<Entry, GetEntriesViewModel>()
+                .ForMember(x => x.CommentCount, y => y.MapFrom(z => z.EntryFavorites.Count));
 
             CreateMap<CreateEntryCommand, Entry>().ReverseMap();
             CreateMap<CreateEntryCommentCommand, EntryComment>().ReverseMap();
