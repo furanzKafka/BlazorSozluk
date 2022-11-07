@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace BlazorSozluk.Common.Models.Queries
 {
-    internal class SearchEntryViewModel
+    public class SearchEntryViewModel
     {
+        public Guid Id { get; set; }
+
+        public string Subject { get; set; }
     }
+
 }
