@@ -8,14 +8,13 @@ namespace BlazorSozluk.Api.WebApi.Infrastructure.Extensions
     public static class ApplicationBuilderExtension
     {
         public static IApplicationBuilder ConfigureExceptionHandling(this IApplicationBuilder app,
-                                                                     bool includeExceptionDetails = false,
-                                                                     bool useDefaultHandlingResponse = true,
-                                                                     Func<HttpContext, Exception, Task> handleException = null)
+            bool includeExceptionDetails = false,
+            bool useDefaultHandlingResponse = true,
+            Func<HttpContext, Exception, Task> handleException = null)
         {
-
-            app.UseExceptionHandler(opt =>
+            app.UseExceptionHandler(options =>
             {
-                opt.Run(context =>
+                options.Run(context =>
                 {
                     var exceptionObject = context.Features.Get<IExceptionHandlerFeature>();
 
@@ -29,9 +28,6 @@ namespace BlazorSozluk.Api.WebApi.Infrastructure.Extensions
                     return DefaultHandleException(context, exceptionObject.Error, includeExceptionDetails);
                 });
             });
-
-
-
 
             return app;
         }

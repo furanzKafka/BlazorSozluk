@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5S0n5MF53Z5cW8qyqra/eaKulPy71wdF9hixTEfFIvw=",
+  "Hash": "cSnGasxIE69qL92lCsrRwx0nbfknWkDa+zUGuaOZc9o=",
   "Source": "BlazorSozluk.WebApp",
   "BasePath": "/",
   "Mode": "Root",
@@ -304,6 +304,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.10\\lib\\net6.0\\Microsoft.AspNetCore.Authorization.dll"
+    },
+    {
+      "Identity": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll",
+      "SourceId": "BlazorSozluk.WebApp",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\6.0.10\\lib\\net6.0\\Microsoft.AspNetCore.Components.Authorization.dll"
     },
     {
       "Identity": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
@@ -729,6 +746,57 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\lib\\net6.0\\Microsoft.Extensions.Primitives.dll"
+    },
+    {
+      "Identity": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.IdentityModel.JsonWebTokens.dll",
+      "SourceId": "BlazorSozluk.WebApp",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.IdentityModel.JsonWebTokens.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.10.0\\lib\\netstandard2.0\\Microsoft.IdentityModel.JsonWebTokens.dll"
+    },
+    {
+      "Identity": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.IdentityModel.Logging.dll",
+      "SourceId": "BlazorSozluk.WebApp",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.IdentityModel.Logging.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.identitymodel.logging\\6.10.0\\lib\\netstandard2.0\\Microsoft.IdentityModel.Logging.dll"
+    },
+    {
+      "Identity": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.IdentityModel.Tokens.dll",
+      "SourceId": "BlazorSozluk.WebApp",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.IdentityModel.Tokens.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.10.0\\lib\\netstandard2.0\\Microsoft.IdentityModel.Tokens.dll"
     },
     {
       "Identity": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll",
@@ -1511,6 +1579,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.11\\runtimes\\browser-wasm\\lib\\net6.0\\System.Globalization.Extensions.dll"
+    },
+    {
+      "Identity": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IdentityModel.Tokens.Jwt.dll",
+      "SourceId": "BlazorSozluk.WebApp",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.IdentityModel.Tokens.Jwt.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\LENOVO\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.10.0\\lib\\netstandard2.0\\System.IdentityModel.Tokens.Jwt.dll"
     },
     {
       "Identity": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Compression.Brotli.dll",
@@ -4284,6 +4369,23 @@
       "OriginalItemSpec": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.dll"
     },
     {
+      "Identity": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\obj\\Debug\\net6.0\\build-gz\\9xREFO3D.gz",
+      "SourceId": "BlazorSozluk.WebApp",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.IdentityModel.Logging.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.IdentityModel.Logging.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.IdentityModel.Logging.dll"
+    },
+    {
       "Identity": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\obj\\Debug\\net6.0\\build-gz\\A7hU8QNn.gz",
       "SourceId": "BlazorSozluk.WebApp",
       "SourceType": "Computed",
@@ -4554,6 +4656,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.Tracing.dll"
+    },
+    {
+      "Identity": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\obj\\Debug\\net6.0\\build-gz\\DpbcWCLZ.gz",
+      "SourceId": "BlazorSozluk.WebApp",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.IdentityModel.JsonWebTokens.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.IdentityModel.JsonWebTokens.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.IdentityModel.JsonWebTokens.dll"
     },
     {
       "Identity": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\obj\\Debug\\net6.0\\build-gz\\dpuiJY8l.gz",
@@ -5168,6 +5287,23 @@
       "OriginalItemSpec": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.Tasks.dll"
     },
     {
+      "Identity": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\obj\\Debug\\net6.0\\build-gz\\izQiBsuo.gz",
+      "SourceId": "BlazorSozluk.WebApp",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll"
+    },
+    {
       "Identity": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\obj\\Debug\\net6.0\\build-gz\\J3U6CbN0.gz",
       "SourceId": "BlazorSozluk.WebApp",
       "SourceType": "Computed",
@@ -5406,6 +5542,23 @@
       "OriginalItemSpec": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.dll"
     },
     {
+      "Identity": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\obj\\Debug\\net6.0\\build-gz\\Kyf6aTJZ.gz",
+      "SourceId": "BlazorSozluk.WebApp",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.IdentityModel.Tokens.Jwt.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IdentityModel.Tokens.Jwt.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IdentityModel.Tokens.Jwt.dll"
+    },
+    {
       "Identity": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\obj\\Debug\\net6.0\\build-gz\\Kz2znLb6.gz",
       "SourceId": "BlazorSozluk.WebApp",
       "SourceType": "Computed",
@@ -5591,6 +5744,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt_EFIGS.dat"
+    },
+    {
+      "Identity": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\obj\\Debug\\net6.0\\build-gz\\M0OYU7iz.gz",
+      "SourceId": "BlazorSozluk.WebApp",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.IdentityModel.Tokens.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.IdentityModel.Tokens.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.IdentityModel.Tokens.dll"
     },
     {
       "Identity": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\obj\\Debug\\net6.0\\build-gz\\M9QH15vN.gz",
