@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BYAG+wP9YgiG8Gr1zMcf4enc/mg3+OZgHJcbmAPpKYlGMKnvvMPBFkdYijWIr2tINDdI1XMdsfDykgsgzJylUQ==",
+  "dgSpecHash": "G4Eaj7NXHVdNgmS6ZnaqNrdGVvqRNmf45zJXBlkMlIqPw85IoVuEAuQOJlwj+tYmW+MEX81eBFyzrjKoQJqVrw==",
   "success": true,
   "projectFilePath": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Clients\\BlazorWeb\\BlazorSozluk.WebApp\\BlazorSozluk.WebApp.csproj",
   "expectedPackageFiles": [
@@ -46,7 +46,7 @@
     "C:\\Users\\LENOVO\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512",
-    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.10\\microsoft.netcore.app.runtime.mono.browser-wasm.6.0.10.nupkg.sha512"
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.11\\microsoft.netcore.app.runtime.mono.browser-wasm.6.0.11.nupkg.sha512"
   ],
   "logs": []
 }
