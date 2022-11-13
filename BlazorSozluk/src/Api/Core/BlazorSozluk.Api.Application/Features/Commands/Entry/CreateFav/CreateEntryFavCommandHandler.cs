@@ -8,21 +8,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlazorSozluk.Api.Application.Features.Commands.Entry.CreateFav
+namespace BlazorSozluk.Api.Application.Features.Commands.Entry.CreateFav;
+public class CreateEntryFavCommandHandler : IRequestHandler<CreateEntryFavCommand, bool>
 {
-    public class CreateEntryFavCommandHandler : IRequestHandler<CreateEntryFavCommand, bool>
+
+    public Task<bool> Handle(CreateEntryFavCommand request, CancellationToken cancellationToken)
     {
-        public Task<bool> Handle(CreateEntryFavCommand request, CancellationToken cancellationToken)
-        {
-            QueueFactory.SendMessageToExchange(exchangeName: SozlukConstants.FavExchangeName,
-                                               exchangeType: SozlukConstants.DefaultExchangeType,
-                                               queueName: SozlukConstants.CreateEntryFavQueueName,
-                                               obj: new CreateEntryFavEvent()
-                                               {
-                                                   CreatedBy=request.UserId,
-                                                   EntryId=request.EntryId
-                                               });
-            return Task.FromResult(true);
-        }
+        QueueFactory.SendMessageToExchange(exchangeName: SozlukConstants.FavExchangeName,
+            exchangeType: SozlukConstants.DefaultExchangeType,
+            queueName: SozlukConstants.CreateEntryFavQueueName,
+            obj: new CreateEntryFavEvent()
+            {
+                EntryId = request.EntryId.Value,
+                CreatedBy = request.UserId.Value
+            });
+
+        return Task.FromResult(true);
     }
 }

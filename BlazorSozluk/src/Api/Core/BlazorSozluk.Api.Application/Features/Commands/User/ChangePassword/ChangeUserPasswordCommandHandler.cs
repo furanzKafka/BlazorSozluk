@@ -9,37 +9,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlazorSozluk.Api.Application.Features.Commands.User.ChangePassword
+namespace BlazorSozluk.Api.Application.Features.Commands.User.ChangePassword;
+public class ChangeUserPasswordCommandHandler : IRequestHandler<ChangeUserPasswordCommand, bool>
 {
-    public class ChangeUserPasswordCommandHandler : IRequestHandler<ChangeUserPasswordCommand, bool>
+    private readonly IUserRepository userRepository;
+
+    public ChangeUserPasswordCommandHandler(IUserRepository userRepository)
     {
-        private readonly IUserRepository userRepository;
+        this.userRepository = userRepository;
+    }
 
-        public ChangeUserPasswordCommandHandler(IUserRepository userRepository)
-        {
-            this.userRepository = userRepository;
-        }
+    public async Task<bool> Handle(ChangeUserPasswordCommand request, CancellationToken cancellationToken)
+    {
+        if (!request.UserId.HasValue)
+            throw new ArgumentNullException(nameof(request.UserId));
 
-        public async Task<bool> Handle(ChangeUserPasswordCommand request, CancellationToken cancellationToken)
-        {
-            if (!request.UserId.HasValue)
-                throw new ArgumentNullException(nameof(request.UserId));
+        var dbUser = await userRepository.GetByIdAsync(request.UserId.Value);
 
-            var dbUser = await userRepository.GetByIdAsync(request.UserId.Value);
+        if (dbUser is null)
+            throw new DatabaseValidationException("User not found!");
 
-            if (dbUser is null)
-                throw new DatabaseValidationException("user not found");
+        var encPass = PasswordEncryptor.Encrpt(request.OldPassword);
+        if (dbUser.Password != encPass)
+            throw new DatabaseValidationException("Old password wrong!");
 
-            var encryptoPass = PasswordEncryptor.Encrpt(request.OldPassword);
-            
-            if (dbUser.Password != encryptoPass)
-                throw new DatabaseValidationException("old password worng");
+        dbUser.Password = PasswordEncryptor.Encrpt(request.NewPassword);
 
-            dbUser.Password = PasswordEncryptor.Encrpt(request.NewPassword);
+        await userRepository.UpdateAsync(dbUser);
 
-            await userRepository.UpdateAsync(dbUser);
-
-            return true;
-        }
+        return true;
     }
 }

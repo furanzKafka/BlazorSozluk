@@ -7,12 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlazorSozluk.Infrastructure.Persistence.Repositories
+namespace BlazorSozluk.Api.Infrastructure.Persistence.Repositories;
+public class UserRepository : GenericRepository<User>, IUserRepository
 {
-    public class UserRepository : GenericRepository<User>, IUserRepository
+    public UserRepository(BlazorSozlukContext dbContext) : base(dbContext)
     {
-        public UserRepository(BlazorSozlukContext dbContext) : base(dbContext)
-        {
-        }
     }
 }

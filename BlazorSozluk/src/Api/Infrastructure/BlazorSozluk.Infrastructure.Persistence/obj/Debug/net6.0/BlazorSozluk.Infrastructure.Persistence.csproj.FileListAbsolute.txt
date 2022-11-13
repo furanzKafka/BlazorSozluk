@@ -2,8 +2,10 @@ D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\Infrastructure\Bl
 D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\Infrastructure\BlazorSozluk.Infrastructure.Persistence\bin\Debug\net6.0\BlazorSozluk.Infrastructure.Persistence.runtimeconfig.json
 D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\Infrastructure\BlazorSozluk.Infrastructure.Persistence\bin\Debug\net6.0\BlazorSozluk.Infrastructure.Persistence.dll
 D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\Infrastructure\BlazorSozluk.Infrastructure.Persistence\bin\Debug\net6.0\BlazorSozluk.Infrastructure.Persistence.pdb
+D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\Infrastructure\BlazorSozluk.Infrastructure.Persistence\bin\Debug\net6.0\BlazorSozluk.Api.Application.dll
 D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\Infrastructure\BlazorSozluk.Infrastructure.Persistence\bin\Debug\net6.0\BlazorSozluk.Api.Domain.dll
 D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\Infrastructure\BlazorSozluk.Infrastructure.Persistence\bin\Debug\net6.0\BlazorSozluk.Common.dll
+D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\Infrastructure\BlazorSozluk.Infrastructure.Persistence\bin\Debug\net6.0\BlazorSozluk.Api.Application.pdb
 D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\Infrastructure\BlazorSozluk.Infrastructure.Persistence\bin\Debug\net6.0\BlazorSozluk.Api.Domain.pdb
 D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\Infrastructure\BlazorSozluk.Infrastructure.Persistence\bin\Debug\net6.0\BlazorSozluk.Common.pdb
 D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\Infrastructure\BlazorSozluk.Infrastructure.Persistence\obj\Debug\net6.0\BlazorSozluk.Infrastructure.Persistence.csproj.AssemblyReference.cache
@@ -17,5 +19,3 @@ D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\Infrastructure\Bl
 D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\Infrastructure\BlazorSozluk.Infrastructure.Persistence\obj\Debug\net6.0\BlazorSozluk.Infrastructure.Persistence.pdb
 D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\Infrastructure\BlazorSozluk.Infrastructure.Persistence\obj\Debug\net6.0\BlazorSozluk.Infrastructure.Persistence.genruntimeconfig.cache
 D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\Infrastructure\BlazorSozluk.Infrastructure.Persistence\obj\Debug\net6.0\ref\BlazorSozluk.Infrastructure.Persistence.dll
-D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\Infrastructure\BlazorSozluk.Infrastructure.Persistence\bin\Debug\net6.0\BlazorSozluk.Api.Application.dll
-D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Api\Infrastructure\BlazorSozluk.Infrastructure.Persistence\bin\Debug\net6.0\BlazorSozluk.Api.Application.pdb

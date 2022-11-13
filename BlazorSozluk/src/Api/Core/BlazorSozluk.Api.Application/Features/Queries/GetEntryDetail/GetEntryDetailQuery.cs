@@ -6,17 +6,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlazorSozluk.Api.Application.Features.Queries.GetEntryDetail
+namespace BlazorSozluk.Api.Application.Features.Queries.GetEntryDetail;
+public class GetEntryDetailQuery : IRequest<GetEntryDetailViewModel>
 {
-    public class GetEntryDetailQuery:IRequest<GetEntryDetailViewModel>
-    {
-        public GetEntryDetailQuery(Guid entryId, Guid? userId)
-        {
-            EntryId = entryId;
-            UserId = userId;
-        }
+    public Guid EntryId { get; set; }
 
-        public Guid EntryId { get; set; }
-        public Guid? UserId { get; set; }
+    public Guid? UserId { get; set; }
+
+    public GetEntryDetailQuery(Guid entryId, Guid? userId)
+    {
+        EntryId = entryId;
+        UserId = userId;
     }
 }

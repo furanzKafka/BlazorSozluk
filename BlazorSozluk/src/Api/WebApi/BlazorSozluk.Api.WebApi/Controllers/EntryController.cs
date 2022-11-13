@@ -2,11 +2,12 @@
 using BlazorSozluk.Api.Application.Features.Queries.GetEntryComments;
 using BlazorSozluk.Api.Application.Features.Queries.GetEntryDetail;
 using BlazorSozluk.Api.Application.Features.Queries.GetMainPageEntries;
-using BlazorSozluk.Api.Application.Features.Queries.GetUserEntries;
+using BlazorSozluk.Api.Application.Features.Queries.GetMyEntries;
 using BlazorSozluk.Common.Models.Queries;
 using BlazorSozluk.Common.Models.RequestModels;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BlazorSozluk.Api.WebApi.Controllers;

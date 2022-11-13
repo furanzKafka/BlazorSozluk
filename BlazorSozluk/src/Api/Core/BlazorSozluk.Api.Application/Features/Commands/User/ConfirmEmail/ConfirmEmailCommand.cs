@@ -1,14 +1,14 @@
-﻿using MediatR;
+﻿using BlazorSozluk.Api.Application.Interfaces.Repositories;
+using BlazorSozluk.Common.Infrastructure.Exceptions;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlazorSozluk.Api.Application.Features.Commands.User.ConfirmEmail
+namespace BlazorSozluk.Api.Application.Features.Commands.User.ConfirmEmail;
+public class ConfirmEmailCommand : IRequest<bool>
 {
-    public class ConfirmEmailCommand : IRequest<bool>
-    {
-        public Guid ConfirmationId { get; set; }
-    }
+    public Guid ConfirmationId { get; set; }
 }

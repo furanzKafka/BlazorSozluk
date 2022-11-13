@@ -8,22 +8,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlazorSozluk.Api.Application.Mapping
+namespace BlazorSozluk.Api.Application.Mapping;
+public class MappingProfile : Profile
 {
-    public class MappingProfile : Profile
+    public MappingProfile()
     {
-        public MappingProfile()
-        {
-            CreateMap<User, LoginUserViewModel>().ReverseMap();
+        CreateMap<User, LoginUserViewModel>()
+            .ReverseMap();
 
-            CreateMap<CreateUserCommand, User>();
-            CreateMap<UpdateUserCommand, User>();
+        CreateMap<CreateUserCommand, User>();
 
-            CreateMap<Entry, GetEntriesViewModel>()
-                .ForMember(x => x.CommentCount, y => y.MapFrom(z => z.EntryFavorites.Count));
+        CreateMap<UpdateUserCommand, User>();
 
-            CreateMap<CreateEntryCommand, Entry>().ReverseMap();
-            CreateMap<CreateEntryCommentCommand, EntryComment>().ReverseMap();
-        }
+        CreateMap<UserDetailViewModel, User>()
+            .ReverseMap();
+
+        CreateMap<CreateEntryCommand, Entry>()
+            .ReverseMap();
+
+        CreateMap<Entry, GetEntriesViewModel>()
+            .ForMember(x => x.CommentCount, y => y.MapFrom(z => z.EntryComments.Count));
+
+
+        CreateMap<CreateEntryCommentCommand, EntryComment>()
+            .ReverseMap();
+
+
     }
 }

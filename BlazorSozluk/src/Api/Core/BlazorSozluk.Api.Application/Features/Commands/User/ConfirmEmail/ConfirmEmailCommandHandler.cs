@@ -7,38 +7,36 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlazorSozluk.Api.Application.Features.Commands.User.ConfirmEmail
+namespace BlazorSozluk.Api.Application.Features.Commands.User.ConfirmEmail;
+public class ConfirmEmailCommandHandler : IRequestHandler<ConfirmEmailCommand, bool>
 {
-    public class ConfirmEmailCommandHandler : IRequestHandler<ConfirmEmailCommand, bool>
+    private readonly IUserRepository userRepository;
+    private readonly IEmailConfirmationRepository emailConfirmationRepository;
+
+    public ConfirmEmailCommandHandler(IUserRepository userRepository, IEmailConfirmationRepository emailConfirmationRepository)
     {
-        private readonly IUserRepository userRepository;
-        private readonly IEmailConfirmationRepository emailConfirmationRepository;
+        this.userRepository = userRepository;
+        this.emailConfirmationRepository = emailConfirmationRepository;
+    }
 
-        public ConfirmEmailCommandHandler(IUserRepository userRepository, IEmailConfirmationRepository emailConfirmationRepository)
-        {
-            this.userRepository = userRepository;
-            this.emailConfirmationRepository = emailConfirmationRepository;
-        }
+    public async Task<bool> Handle(ConfirmEmailCommand request, CancellationToken cancellationToken)
+    {
+        var confirmation = await emailConfirmationRepository.GetByIdAsync(request.ConfirmationId);
 
-        public async Task<bool> Handle(ConfirmEmailCommand request, CancellationToken cancellationToken)
-        {
-            var confirmation = await emailConfirmationRepository.GetByIdAsync(request.ConfirmationId);
+        if (confirmation is null)
+            throw new DatabaseValidationException("Confirmation not found!");
 
-            if (confirmation is null)
-                throw new DatabaseValidationException("Confirmation not found!");
+        var dbUser = await userRepository.GetSingleAsync(i => i.EmailAddress == confirmation.NewEmailAddress);
 
-            var dbUser = await userRepository.GetSingleAsync(i => i.EmailAddress == confirmation.NewEmailAddress);
+        if (dbUser is null)
+            throw new DatabaseValidationException("User not found with this email!");
 
-            if (dbUser is null)
-                throw new DatabaseValidationException("User not found with this email!");
+        if (dbUser.EmailConfirmed)
+            throw new DatabaseValidationException("Email address is already confirmed!");
 
-            if (dbUser.EmailConfirmed)
-                throw new DatabaseValidationException("Email address is already confirmed!");
+        dbUser.EmailConfirmed = true;
+        await userRepository.UpdateAsync(dbUser);
 
-            dbUser.EmailConfirmed = true;
-            await userRepository.UpdateAsync(dbUser);
-
-            return true;
-        }
+        return true;
     }
 }

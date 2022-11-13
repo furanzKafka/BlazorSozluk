@@ -8,26 +8,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlazorSozluk.Api.Application.Features.Commands.EntryComment.Create
+namespace BlazorSozluk.Api.Application.Features.Commands.EntryComment.Create;
+public class CreateEntryCommentCommandHandler : IRequestHandler<CreateEntryCommentCommand, Guid>
 {
-    public class CreateEntryCommentCommandHandler : IRequestHandler<CreateEntryCommentCommand, Guid>
+    private readonly IEntryCommentRepository entryCommentRepository;
+    private readonly IMapper mapper;
+
+    public CreateEntryCommentCommandHandler(IEntryCommentRepository entryCommentRepository, IMapper mapper)
     {
-        private readonly IEntryCommentRepository entryCommentRepository;
-        private readonly IMapper mapper;
+        this.entryCommentRepository = entryCommentRepository;
+        this.mapper = mapper;
+    }
 
-        public CreateEntryCommentCommandHandler(IEntryCommentRepository entryCommentRepository, IMapper mapper)
-        {
-            this.entryCommentRepository = entryCommentRepository;
-            this.mapper = mapper;
-        }
+    public async Task<Guid> Handle(CreateEntryCommentCommand request, CancellationToken cancellationToken)
+    {
+        var dbEntryComment = mapper.Map<Domain.Models.EntryComment>(request);
 
-        public async Task<Guid> Handle(CreateEntryCommentCommand request, CancellationToken cancellationToken)
-        {
-            var dbEntryComment = mapper.Map<Domain.Models.EntryComment>(request);
+        await entryCommentRepository.AddAsync(dbEntryComment);
 
-            await entryCommentRepository.AddAsync(dbEntryComment);
-
-            return dbEntryComment.Id;
-        }
+        return dbEntryComment.Id;
     }
 }

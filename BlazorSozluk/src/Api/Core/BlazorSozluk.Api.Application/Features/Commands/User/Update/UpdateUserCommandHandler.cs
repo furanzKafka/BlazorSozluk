@@ -12,58 +12,51 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlazorSozluk.Api.Application.Features.Commands.User.Update
+namespace BlazorSozluk.Api.Application.Features.Commands.User.Update;
+public class UpdateUserCommandHandler : IRequestHandler<UpdateUserCommand, Guid>
 {
-    public class UpdateUserCommandHandler : IRequestHandler<UpdateUserCommand, Guid>
+    private readonly IMapper mapper;
+    private readonly IUserRepository userRepository;
+
+    public UpdateUserCommandHandler(IMapper mapper, IUserRepository userRepository)
     {
-        private readonly IMapper mapper;
-        private readonly IUserRepository userRepository;
+        this.mapper = mapper;
+        this.userRepository = userRepository;
+    }
 
-        public UpdateUserCommandHandler(IMapper mapper, IUserRepository userRepository)
+    public async Task<Guid> Handle(UpdateUserCommand request, CancellationToken cancellationToken)
+    {
+        var dbUser = await userRepository.GetByIdAsync(request.Id);
+
+        if (dbUser is null)
+            throw new DatabaseValidationException("User not found!");
+
+        var dbEmailAddress = dbUser.EmailAddress;
+        var emailChanged = string.CompareOrdinal(dbEmailAddress, request.EmailAddress) != 0;
+
+        mapper.Map(request, dbUser);
+
+        var rows = await userRepository.UpdateAsync(dbUser);
+
+        // Check if email changed
+
+        if (emailChanged && rows > 0)
         {
-            this.mapper = mapper;
-            this.userRepository = userRepository;
-        }
-
-        public async Task<Guid> Handle(UpdateUserCommand request, CancellationToken cancellationToken)
-        {
-            var dbUser = await userRepository.GetByIdAsync(request.Id);
-
-            if (dbUser is null)
-                throw new DatabaseValidationException("user not found");
-
-            var dbEmailAddress = dbUser.EmailAddress;
-            bool emailChanged = string.CompareOrdinal(dbEmailAddress, request.EmailAddress) != 0;
-
-            mapper.Map(request, dbUser); //this is same action bottom line
-            //dbUser = mapper.Map<BlazorSozluk.Api.Domain.Models.User>(request);
-
-            var rows = await userRepository.UpdateAsync(dbUser);
-
-
-            //check if email changed
-
-
-
-            if (emailChanged && rows > 0)
+            var @event = new UserEmailChangedEvent()
             {
+                OldEmailAddress = null,
+                NewEmailAddress = dbUser.EmailAddress
+            };
 
-                var @event = new UserEmailChangedEvent()
-                {
-                    OldEmailAddress = null,
-                    NewEmailAddress = dbUser.EmailAddress
-                };
+            QueueFactory.SendMessageToExchange(exchangeName: SozlukConstants.UserExchangeName,
+                                               exchangeType: SozlukConstants.DefaultExchangeType,
+                                               queueName: SozlukConstants.UserEmailChangedQueueName,
+                                               obj: @event);
 
-                QueueFactory.SendMessageToExchange(exchangeName: SozlukConstants.UserExchangeName,
-                                                   exchangeType: SozlukConstants.DefaultExchangeType,
-                                                   queueName: SozlukConstants.UserEmailChangedQueueName,
-                                                   obj: @event);
-                dbUser.EmailConfirmed=false;    
-                await userRepository.UpdateAsync(dbUser);
-            }
-
-            return dbUser.Id;
-
+            dbUser.EmailConfirmed = false;
+            await userRepository.UpdateAsync(dbUser);
         }
+
+        return dbUser.Id;
     }
 }

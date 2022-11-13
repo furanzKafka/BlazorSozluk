@@ -5,18 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlazorSozluk.Api.Application.Features.Commands.EntryComment.DeleteVote
+namespace BlazorSozluk.Api.Application.Features.Commands.EntryComment.DeleteVote;
+public class DeleteEntryCommentVoteCommand : IRequest<bool>
 {
-    public class DeleteEntryCommentVoteCommand : IRequest<bool>
+    public Guid EntryCommentId { get; set; }
+
+    public Guid UserId { get; set; }
+
+    public DeleteEntryCommentVoteCommand(Guid entryCommentId, Guid userId)
     {
-        public Guid EntryCommentId { get; set; }
-
-        public Guid UserId { get; set; }
-
-        public DeleteEntryCommentVoteCommand(Guid entryCommentId, Guid userId)
-        {
-            EntryCommentId = entryCommentId;
-            UserId = userId;
-        }
+        EntryCommentId = entryCommentId;
+        UserId = userId;
     }
 }

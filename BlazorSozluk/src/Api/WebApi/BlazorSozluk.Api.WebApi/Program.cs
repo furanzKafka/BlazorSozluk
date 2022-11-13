@@ -1,8 +1,8 @@
 using BlazorSozluk.Api.Application.Extensions;
-//using BlazorSozluk.Api.Infrastructure.Persistence.Extensions;
+using BlazorSozluk.Api.Infrastructure.Persistence.Extensions;
 using BlazorSozluk.Api.WebApi.Infrastructure.ActionFilters;
 using BlazorSozluk.Api.WebApi.Infrastructure.Extensions;
-using BlazorSozluk.Infrastructure.Persistence.Extensions;
+//using BlazorSozluk.Infrastructure.Persistence.Extensions;
 using FluentValidation.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
