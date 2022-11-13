@@ -1,21 +1,34 @@
-namespace BlazorSozluk.Projections.FavoriteService
+using BlazorSozluk.Common;
+using BlazorSozluk.Common.Events.Entry;
+using BlazorSozluk.Common.Infrastructure;
+
+namespace BlazorSozluk.Projections.FavoriteService;
+
+public class Worker : BackgroundService
 {
-    public class Worker : BackgroundService
+    private readonly ILogger<Worker> _logger;
+    private readonly IConfiguration configuration;
+
+    public Worker(ILogger<Worker> logger, IConfiguration configuration)
     {
-        private readonly ILogger<Worker> _logger;
+        _logger = logger;
+        this.configuration = configuration;
+    }
 
-        public Worker(ILogger<Worker> logger)
-        {
-            _logger = logger;
-        }
+    protected override async Task ExecuteAsync(CancellationToken stoppingToken)
+    {
+        var connStr = configuration.GetConnectionString("SqlServer");
 
-        protected override async Task ExecuteAsync(CancellationToken stoppingToken)
-        {
-            while (!stoppingToken.IsCancellationRequested)
+        var favService = new Services.FavoriteService(connStr);
+
+        QueueFactory.CreateBasicConsumer()
+            .EnsureExchange(SozlukConstants.FavExchangeName)
+            .EnsureQueue(SozlukConstants.CreateEntryFavQueueName, SozlukConstants.FavExchangeName)
+            .Receive<CreateEntryFavEvent>(fav =>
             {
-                _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-                await Task.Delay(1000, stoppingToken);
-            }
-        }
+                favService.CreateEntryFav(fav).GetAwaiter().GetResult();
+                _logger.LogInformation($"Received EntryId {fav.EntryId}");
+            })
+            .StartConsuming(SozlukConstants.CreateEntryFavQueueName);
     }
 }
