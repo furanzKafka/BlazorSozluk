@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Projections\\BlazorSozluk.Projections.FavoriteService\\BlazorSozluk.Projections.FavoriteService.csproj": {}
+    "D:\\Tutorial\\cs\\BlazorSozluk\\BlazorSozluk\\src\\Projections\\BlazorSozluk.Projections.FavoriteService\\BlazorSozluk.Projections.FavoriteService.csproj": {}
   },
   "projects": {
-    "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Common\\BlazorSozluk.Common\\BlazorSozluk.Common.csproj": {
+    "D:\\Tutorial\\cs\\BlazorSozluk\\BlazorSozluk\\src\\Common\\BlazorSozluk.Common\\BlazorSozluk.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Common\\BlazorSozluk.Common\\BlazorSozluk.Common.csproj",
+        "projectUniqueName": "D:\\Tutorial\\cs\\BlazorSozluk\\BlazorSozluk\\src\\Common\\BlazorSozluk.Common\\BlazorSozluk.Common.csproj",
         "projectName": "BlazorSozluk.Common",
-        "projectPath": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Common\\BlazorSozluk.Common\\BlazorSozluk.Common.csproj",
-        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Common\\BlazorSozluk.Common\\obj\\",
+        "projectPath": "D:\\Tutorial\\cs\\BlazorSozluk\\BlazorSozluk\\src\\Common\\BlazorSozluk.Common\\BlazorSozluk.Common.csproj",
+        "packagesPath": "C:\\Users\\furka\\.nuget\\packages\\",
+        "outputPath": "D:\\Tutorial\\cs\\BlazorSozluk\\BlazorSozluk\\src\\Common\\BlazorSozluk.Common\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\furka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -69,21 +73,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Projections\\BlazorSozluk.Projections.FavoriteService\\BlazorSozluk.Projections.FavoriteService.csproj": {
+    "D:\\Tutorial\\cs\\BlazorSozluk\\BlazorSozluk\\src\\Projections\\BlazorSozluk.Projections.FavoriteService\\BlazorSozluk.Projections.FavoriteService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Projections\\BlazorSozluk.Projections.FavoriteService\\BlazorSozluk.Projections.FavoriteService.csproj",
+        "projectUniqueName": "D:\\Tutorial\\cs\\BlazorSozluk\\BlazorSozluk\\src\\Projections\\BlazorSozluk.Projections.FavoriteService\\BlazorSozluk.Projections.FavoriteService.csproj",
         "projectName": "BlazorSozluk.Projections.FavoriteService",
-        "projectPath": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Projections\\BlazorSozluk.Projections.FavoriteService\\BlazorSozluk.Projections.FavoriteService.csproj",
-        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Projections\\BlazorSozluk.Projections.FavoriteService\\obj\\",
+        "projectPath": "D:\\Tutorial\\cs\\BlazorSozluk\\BlazorSozluk\\src\\Projections\\BlazorSozluk.Projections.FavoriteService\\BlazorSozluk.Projections.FavoriteService.csproj",
+        "packagesPath": "C:\\Users\\furka\\.nuget\\packages\\",
+        "outputPath": "D:\\Tutorial\\cs\\BlazorSozluk\\BlazorSozluk\\src\\Projections\\BlazorSozluk.Projections.FavoriteService\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\furka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -97,8 +105,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Common\\BlazorSozluk.Common\\BlazorSozluk.Common.csproj": {
-                "projectPath": "D:\\##C#_calisma\\####TechBudy\\BlazorSozluk\\BlazorSozluk\\src\\Common\\BlazorSozluk.Common\\BlazorSozluk.Common.csproj"
+              "D:\\Tutorial\\cs\\BlazorSozluk\\BlazorSozluk\\src\\Common\\BlazorSozluk.Common\\BlazorSozluk.Common.csproj": {
+                "projectPath": "D:\\Tutorial\\cs\\BlazorSozluk\\BlazorSozluk\\src\\Common\\BlazorSozluk.Common\\BlazorSozluk.Common.csproj"
               }
             }
           }
@@ -142,7 +150,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
