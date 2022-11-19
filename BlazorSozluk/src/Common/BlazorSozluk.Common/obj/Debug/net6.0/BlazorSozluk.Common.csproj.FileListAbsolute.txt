@@ -10,3 +10,15 @@ D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Common\BlazorSozluk.C
 D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Common\BlazorSozluk.Common\obj\Debug\net6.0\refint\BlazorSozluk.Common.dll
 D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Common\BlazorSozluk.Common\obj\Debug\net6.0\BlazorSozluk.Common.pdb
 D:\##C#_calisma\####TechBudy\BlazorSozluk\BlazorSozluk\src\Common\BlazorSozluk.Common\obj\Debug\net6.0\ref\BlazorSozluk.Common.dll
+D:\Tutorial\cs\BlazorSozluk\BlazorSozluk\src\Common\BlazorSozluk.Common\bin\Debug\net6.0\BlazorSozluk.Common.deps.json
+D:\Tutorial\cs\BlazorSozluk\BlazorSozluk\src\Common\BlazorSozluk.Common\bin\Debug\net6.0\BlazorSozluk.Common.dll
+D:\Tutorial\cs\BlazorSozluk\BlazorSozluk\src\Common\BlazorSozluk.Common\bin\Debug\net6.0\BlazorSozluk.Common.pdb
+D:\Tutorial\cs\BlazorSozluk\BlazorSozluk\src\Common\BlazorSozluk.Common\obj\Debug\net6.0\BlazorSozluk.Common.csproj.AssemblyReference.cache
+D:\Tutorial\cs\BlazorSozluk\BlazorSozluk\src\Common\BlazorSozluk.Common\obj\Debug\net6.0\BlazorSozluk.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\Tutorial\cs\BlazorSozluk\BlazorSozluk\src\Common\BlazorSozluk.Common\obj\Debug\net6.0\BlazorSozluk.Common.AssemblyInfoInputs.cache
+D:\Tutorial\cs\BlazorSozluk\BlazorSozluk\src\Common\BlazorSozluk.Common\obj\Debug\net6.0\BlazorSozluk.Common.AssemblyInfo.cs
+D:\Tutorial\cs\BlazorSozluk\BlazorSozluk\src\Common\BlazorSozluk.Common\obj\Debug\net6.0\BlazorSozluk.Common.csproj.CoreCompileInputs.cache
+D:\Tutorial\cs\BlazorSozluk\BlazorSozluk\src\Common\BlazorSozluk.Common\obj\Debug\net6.0\BlazorSozluk.Common.dll
+D:\Tutorial\cs\BlazorSozluk\BlazorSozluk\src\Common\BlazorSozluk.Common\obj\Debug\net6.0\refint\BlazorSozluk.Common.dll
+D:\Tutorial\cs\BlazorSozluk\BlazorSozluk\src\Common\BlazorSozluk.Common\obj\Debug\net6.0\BlazorSozluk.Common.pdb
+D:\Tutorial\cs\BlazorSozluk\BlazorSozluk\src\Common\BlazorSozluk.Common\obj\Debug\net6.0\ref\BlazorSozluk.Common.dll
